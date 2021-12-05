@@ -20,6 +20,7 @@ const Wrapper=styled.div`
 `;
 
 const Main=styled.main`
+position:fixed;
 height:calc(100%-185px);
 width:80%;
 padding:1em;
