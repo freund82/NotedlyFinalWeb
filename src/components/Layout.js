@@ -23,7 +23,6 @@ const Main=styled.main`
 height:calc(100%-185px);
 width:100%;
 padding:1em;
-overflow-y:scroll;
 /*Снова применяем стили медиазапросов к экранам от 700 пикселей */
 @media(min-width:700px){
     flex:1;
