@@ -16,6 +16,7 @@ const Wrapper=styled.div`
     width:100%;
     flex:auto;
     flex-direction:column;
+    overflow:scroll;
 }
 `;
 
