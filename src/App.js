@@ -24,6 +24,7 @@ import { setContext} from 'apollo-link-context';
 
 //Настраиваем API URI и кэш
 const uri=process.env.API_URI;
+console.log(uri)
 const httpLink=createHttpLink({uri});
 const cache=new InMemoryCache();
 
