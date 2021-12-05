@@ -22,7 +22,7 @@ const Wrapper=styled.div`
 const Main=styled.main`
 position:fixed;
 height:calc(100%-185px);
-width:100%;
+width:80%;
 padding:1em;
 overflow-y:scroll;
 /*Снова применяем стили медиазапросов к экранам от 700 пикселей */
