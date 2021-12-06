@@ -44,7 +44,7 @@ const NoteForm=props=>{
                         required
                         type="text"
                         name="content"
-                        placeholder="Note content"
+                        placeholder="Введите текст"
                         value={value.content}
                         onChange={onChange}
                         >
