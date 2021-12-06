@@ -56,7 +56,7 @@ const Navigation=()=>{
                     <span aria-hidden="true" role="img">&#11088;</span><Link to="/favorites">Избранное</Link>
                 </li>
                 <li>
-                    <span aria-hidden="true" role="img">&#11088;</span><Link to="/new">Добавить заметку</Link>
+                    <span aria-hidden="true" role="img">&#11088;</span><Link to="/new">Новая заметка</Link>
                 </li>
             </NavList>
         </Nav>
