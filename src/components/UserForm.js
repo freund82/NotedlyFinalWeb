@@ -80,7 +80,7 @@ const UserForm=props=>{
                             placeholder="Password"
                             onChange={onChange}
                         ></input>
-                        <Button type="submit">Зарегистрировать</Button>
+                        <Button type="submit">Вход/Регистрация</Button>
                 </Form>
         </Wrapper>
     );
