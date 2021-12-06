@@ -18,9 +18,9 @@ const NotePage=props=>{
     const {loading, error, data}=useQuery(GET_NOTE, {variables:{id}});
 
     //Если данные загружаются, отображаем сообщение о загрузке
-    if(loading)return<p>Loading...</p>;
+    if(loading)return<p>Загрузка</p>;
     //Если при получении данных произошел сбой, отображаем сообщение об ошибке
-    if(error)return <p>Error! Note not found</p>;
+    if(error)return <p>Ошибка! Запись не найдена</p>;
 
     //Если загрузка данных произошла успешноб отображаем их в UI
     return(

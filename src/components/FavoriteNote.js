@@ -38,7 +38,7 @@ const FavoriteNote=props=>{
                     setCount(count-1);
                 }}
                 >
-                    Remove Favorite
+                    Удалить из Избранного
                 </ButtonAsLink>
            ):(
                <ButtonAsLink
@@ -48,7 +48,7 @@ const FavoriteNote=props=>{
                     setCount(count+1);
                 }}
                 >
-                    Add Favorite
+                    Добавить в Избранное
                 </ButtonAsLink>
            )}
            :{count}

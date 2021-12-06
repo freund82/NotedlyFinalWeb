@@ -47,16 +47,16 @@ const Navigation=()=>{
         <Nav>
             <NavList>
                 <li>
-                   <span aria-hidden="true" role="img">&#127968;</span> <Link to="/">Home</Link>
+                   <span aria-hidden="true" role="img">&#127968;</span> <Link to="/">Главная</Link>
                 </li>
                 <li>
-                    <span aria-hidden="true" role="img">&#128221;</span><Link to="/mynotes">My Notes</Link>
+                    <span aria-hidden="true" role="img">&#128221;</span><Link to="/mynotes">Мои заметки</Link>
                 </li>
                 <li>
-                    <span aria-hidden="true" role="img">&#11088;</span><Link to="/favorites">Favorites</Link>
+                    <span aria-hidden="true" role="img">&#11088;</span><Link to="/favorites">Избранное</Link>
                 </li>
                 <li>
-                    <span aria-hidden="true" role="img">&#11088;</span><Link to="/new">New</Link>
+                    <span aria-hidden="true" role="img">&#11088;</span><Link to="/new">Добавить заметку</Link>
                 </li>
             </NavList>
         </Nav>

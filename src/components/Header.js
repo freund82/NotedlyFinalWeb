@@ -57,12 +57,12 @@ const Header=props=>{
                             //Перенаправляем пользователя на домашнюю страницу
                             props.history.push('/');
                         }}>
-                        Logout
+                        Выйти
                     </ButtonAsLink>
                 ):(
                     <p>
-                        <Link to={'/signin'}>Sign In</Link> or{' '}
-                        <Link to={'/signup'}>Sign Up</Link>
+                        <Link to={'/signin'}>Вход</Link> or{' '}
+                        <Link to={'/signup'}>Регистрация</Link>
                     </p>
                 )}
             </UserState>

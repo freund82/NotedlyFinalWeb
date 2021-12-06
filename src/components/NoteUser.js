@@ -13,9 +13,9 @@ import FavoriteNote from './FavoriteNote';
 const NoteUser=props=>{
     const {loading, error, data}=useQuery(GET_ME);
     //Если данные загружаются, выдаем сообщение о загрузке
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p>Загрузка...</p>;
     //Если при получении данных произошел сбой, выдаем сообщение об ошибке
-    if (error) return <p>Error!</p>;
+    if (error) return <p>Ошибка!</p>;
     return (
         <React.Fragment>
             <FavoriteNote
@@ -26,7 +26,7 @@ const NoteUser=props=>{
             <br />
             {data.me.id === props.note.author.id && (
                 <React.Fragment>
-                    <Link to={`/edit/${props.note.id}`}>Edit</Link> <br />
+                    <Link to={`/edit/${props.note.id}`}>Редактировать</Link> <br />
                     <DeleteNote noteId={props.note.id}></DeleteNote>
                     </React.Fragment>
             )}

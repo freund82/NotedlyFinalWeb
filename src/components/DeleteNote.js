@@ -21,7 +21,7 @@ const DeleteNote=props=>{
             props.history.push('/mynotes');
         }
     });
-    return <ButtonAsLink onClick={deleteNote}>Delete Note</ButtonAsLink>;
+    return <ButtonAsLink onClick={deleteNote}>Удалить заметку</ButtonAsLink>;
 };
 
 export default withRouter(DeleteNote);

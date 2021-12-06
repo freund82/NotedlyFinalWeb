@@ -43,9 +43,9 @@ const NewNote=props=>{
     return(
         <React.Fragment>
             {/*Во время загрузки мутации выдаем сообщение о загрузке*/}
-            {loading && <p>Loading...</p>}
+            {loading && <p>Загрузка...</p>}
             {/*В случае сбоя выдаем сообщение об ошибке*/}
-            {error && <p>Error saving the note</p>}
+            {error && <p>Ошибка сохранения заметки</p>}
             {/*Компонент формы, передающий мутацию данных в качестве prop */}
             <NoteForm action={data}></NoteForm>
         </React.Fragment>

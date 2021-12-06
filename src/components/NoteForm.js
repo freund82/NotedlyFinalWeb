@@ -49,7 +49,7 @@ const NoteForm=props=>{
                         onChange={onChange}
                         >
                     </TextArea>
-                    <Button type="submit">Save</Button>
+                    <Button type="submit">Сохранить</Button>
                 </Form>
         </Wrapper>
     );

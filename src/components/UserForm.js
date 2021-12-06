@@ -37,7 +37,7 @@ const UserForm=props=>{
     return(
         <Wrapper>
             {/*Отображаем соответствующий заголовок формы */}
-            {props.formType==='signup'?<h2>Sign Up</h2>:<h2>Sign In</h2>}
+            {props.formType==='signup'?<h2>Регистрация</h2>:<h2>Вход</h2>}
             {/*Выполняет мутацию, когда пользователь отправляет форму */}
             <Form
                 onSubmit={e=>{
@@ -51,7 +51,7 @@ const UserForm=props=>{
                 >
                     {props.formType==='signup'&&(
                         <React.Fragment>
-                            <label htmlFor="username">Username:</label>
+                            <label htmlFor="username">Логин:</label>
                             <input
                                 required
                                 type="text"
@@ -71,7 +71,7 @@ const UserForm=props=>{
                         placeholder="Email"
                         onChange={onChange}
                         ></input>
-                        <label htmlFor="password">Password:</label>
+                        <label htmlFor="password">Пароль:</label>
                         <input
                             required
                             type="password"
@@ -80,7 +80,7 @@ const UserForm=props=>{
                             placeholder="Password"
                             onChange={onChange}
                         ></input>
-                        <Button type="submit">Submit</Button>
+                        <Button type="submit">Зарегистрировать</Button>
                 </Form>
         </Wrapper>
     );

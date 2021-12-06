@@ -30,9 +30,9 @@ const [signIn, {loading, error}]=useMutation(SIGNIN_USER, {
         <React.Fragment>
             <UserForm action={signIn} formType="signIn"></UserForm>
             {/*Если данные загружаются, отображаем сообщение о загрузке */}
-            {loading && <p>Loading...</p>}
+            {loading && <p>Загрузка...</p>}
             {/*Если при загрузке произошел сбой, отображаем сообщение об ошибке */}
-            {error && <p>Error signing in!</p>}
+            {error && <p>Ошибка входа!</p>}
         </React.Fragment>
     );
 };

@@ -41,9 +41,9 @@ const UserActions=styled.div`
 const Note=({note})=>{
     const {loading, error, data}=useQuery(IS_LOGGED_IN);
     //Если данные загружаются, выдаем сообщение о загрузке
-    if(loading)return <p>Loading...</p>;
+    if(loading)return <p>Загрузка...</p>;
     //Если при получении данных произошел сбой, выдаем сообщение об ошибке
-    if(error)return <p>Error!</p>;
+    if(error)return <p>Ошибка!</p>;
 
     return(
         <StyledNote>
@@ -56,7 +56,7 @@ const Note=({note})=>{
             />
             </MetaInfo>
             <MetaInfo>
-                <em>by</em> {note.author.username} <br />
+                <em>автор</em> {note.author.username} <br />
                 {format(note.createdAt, 'Do MMM YYYY')}
             </MetaInfo>
             {data.isLoggedIn ? (
@@ -65,7 +65,7 @@ const Note=({note})=>{
                     </UserActions>
             ):(
                 <UserActions>
-                <em>Favorites:</em> {note.favoriteCount}
+                <em>Избранное:</em> {note.favoriteCount}
                 </UserActions>
             )}
             </MetaData>

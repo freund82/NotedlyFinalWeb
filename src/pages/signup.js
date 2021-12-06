@@ -54,9 +54,9 @@ const client=useApolloClient();
         <React.Fragment>
             <UserForm action={signUp} formType="signup"></UserForm>
             {/*Если данные загружаются, отображаем сообщение о загрузке */}
-            {loading && <p>Loading...</p>}
+            {loading && <p>Загрузка...</p>}
             {/*Если при загрузке произошел сбой, отображаем сообщение об ошибке */}
-            {error && <p>Error creating an account!</p>}
+            {error && <p>Ошибка регистрации</p>}
         </React.Fragment>
     );
 };

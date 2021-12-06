@@ -30,13 +30,13 @@ const EditNote=props=>{
         }
     })
     //Если данные загружаются, отображаем сообщение о загрузке
-    if(loading)return<p>Loading...</p>;
+    if(loading)return<p>Загрузка...</p>;
     //Если при получении данных произошел сбой, отображаем сообщение об ошибке
-    if(error)return <p>Error!</p>;
+    if(error)return <p>Ошибка!</p>;
     //Если текущий пользователь не соответствует автору заметки,
     //возвращает соответствующее сообщение
     if(userdata.me.id !== data.note.author.id){
-        return <p>You do not have access to edit this note</p>;
+        return <p>У Вас нет доступа для редактирования данной заметки!</p>;
     }
     //Передаем данные в компонент формы
     return <NoteForm content={data.note.content} action={editNote}></NoteForm>;

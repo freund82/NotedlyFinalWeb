@@ -13,16 +13,16 @@ const Favorites=()=>{
 
     const {loading, error, data}=useQuery(GET_MY_FAVORITES);
      //Если данные загружаются, выдаем сообщение о загрузке
-     if(loading) return 'Loading...';
+     if(loading) return 'Загрузка...';
      //Если при получении данных произошел сбой, выдаем сообщение об ошибке
-     if(error) return `Error! ${error.message}`;
+     if(error) return `Ошибка! ${error.message}`;
      //Если запрос выполнен успешно и содержит заметки, возвращаем их в ленту,
      //Если же запрос выполнен успешно, но заметок в нем нет,
      //выдаем сообщение "No favorites yet"
      if(data.me.favorites.length !==0){
          return <NoteFeed notes={data.me.favorites}></NoteFeed>;
      } else{
-         return <p>No favorites yet</p>
+         return <p>Нет избранных записей</p>
      };
 };
 

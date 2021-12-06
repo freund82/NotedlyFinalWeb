@@ -17,10 +17,10 @@ const Home=()=>{
     const{data, loading, error, fetchMore}=useQuery(GET_NOTES);
 
     //Если данные загружаются, отображаем сообщение о загрузке
-    if(loading) return <p>Loading...</p>;
+    if(loading) return <p>Загрузка данных...</p>;
 
     //Если при получении данных произошел сбой, отображаем сообщение об ошибке
-    if(error) return <p>Error!</p>;
+    if(error) return <p>Ошибка!</p>;
 
     //Если при получении данных прошло успешно, отображаем их в UI
     return(
@@ -53,7 +53,7 @@ const Home=()=>{
                 }
               })
             }>
-              Load more
+              Следующие записи
               </Button>
         )}
       </React.Fragment>
