@@ -61,7 +61,7 @@ const Header=props=>{
                     </ButtonAsLink>
                 ):(
                     <p>
-                        <Link to={'/signin'}>Вход</Link> or{' '}
+                        <Link to={'/signin'}>Вход</Link> или{' '}
                         <Link to={'/signup'}>Регистрация</Link>
                     </p>
                 )}
